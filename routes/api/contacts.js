@@ -1,6 +1,6 @@
 const express = require("express");
 
-const ctrl = require("../../controllers")
+const ctrl = require("../../controllers/contacts")
 
 const {ctrlWrapper} = require("../../helpers")
 
@@ -14,7 +14,7 @@ router.get("/", ctrlWrapper(ctrl.getAll))
 
 router.get("/:id", isValidId, ctrlWrapper(ctrl.getById))
 
-router.post("/",  validateBody(schemas.addSchema), ctrlWrapper(ctrl.add))
+router.post("/", validateBody(schemas.addSchema), ctrlWrapper(ctrl.add))
 
 router.put("/:id", isValidId, validateBody(schemas.addSchema), ctrlWrapper(ctrl.updateById))
 

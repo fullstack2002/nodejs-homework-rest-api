@@ -1,6 +1,6 @@
-const { Contact } = require("../models/db/contact")
+const { Contact } = require("../../models/db/contact")
 
-const {HttpError} = require("../helpers")
+const {HttpError} = require("../../helpers")
 
 const removeById = async(req, res)=> {
     const {id} = req.params;

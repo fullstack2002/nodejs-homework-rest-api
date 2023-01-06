@@ -1,4 +1,4 @@
-const { Contact } = require("../models/db/contact")
+const { Contact } = require("../../models/db/contact")
 
 const getAll = async(req, res)=> {
     const result = await Contact.find({}, "-createdAt -updatedAt")

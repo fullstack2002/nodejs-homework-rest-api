@@ -4,7 +4,7 @@ const ctrl = require("../../controllers/auth")
 
 const {ctrlWrapper} = require("../../helpers")
 
-const {validateBody, isValidId} = require("../../middlewares")
+const {validateBody} = require("../../middlewares")
 
 const {schemas} = require("../../models/db/user")
 
