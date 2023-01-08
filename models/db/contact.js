@@ -19,7 +19,7 @@ const contactSchema = new Schema({
     default: false,
   },
   owner: {
-    type: Schema.Types.objectId,
+    type: Schema.Types.ObjectId,
     ref: "user",
     required: true,
   }

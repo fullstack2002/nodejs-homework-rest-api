@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken")
 
 const { User } = require("../../models/db/user")
 
-const { HttpError } = require("../helpers")
+const {HttpError} = require("../../helpers")
 
 const {SECRET_KEY} = process.env;
 
