@@ -9,7 +9,7 @@ const resendVerifyEmail = async (req, res) => {
     throw HttpError(404)
   }
 
-  await sendEmail(verifyEmail);
+  await sendEmail(verificationCode);
 
   res.json({
     message: "Verify email resend"
